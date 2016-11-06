@@ -9,4 +9,5 @@
     <string name="date_format">dd MMMM, yyyy</string>
 
     <string name="date_picker_title">Date of Crime:</string>
+    <string name="dialog_date_title">Pick a Date/Time</string>
 </resources>

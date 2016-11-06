@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_date_title"
+        android:layout_gravity="left"
+        android:textStyle="bold"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -27,5 +32,20 @@
             android:layout_height="wrap_content"
             android:timePickerMode="spinner"/>
     </RelativeLayout>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right" >
+        <Button
+            android:id="@+id/dialog_date_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel" />
+        <Button
+            android:id="@+id/dialog_date_ok_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@android:string/ok" />
+    </LinearLayout>
 </LinearLayout>
