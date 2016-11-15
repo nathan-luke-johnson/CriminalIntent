@@ -10,4 +10,15 @@
 
     <string name="date_picker_title">Date of Crime:</string>
     <string name="dialog_date_title">Pick a Date/Time</string>
+    <string name="new_crime">New Crime</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="delete_crime">Delete Crime</string>
+    <string name="confirm_delete">Are you sure you want to delete this crime?</string>
+
+    <string name="subtitle_format">%1$s crimes</string>
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$s crime</item>
+        <item quantity="other">%1$s crimes</item>
+    </plurals>
 </resources>

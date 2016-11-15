@@ -12,7 +12,7 @@
         android:layout_gravity="left"
         android:textStyle="bold"/>
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1">
         <DatePicker
@@ -23,7 +23,7 @@
             android:calendarViewShown="false"/>
     </RelativeLayout>
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1">
         <TimePicker

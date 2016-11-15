@@ -25,12 +25,25 @@ public class CrimeLab {
     private CrimeLab(Context context) {
         mCrimes = new ArrayList<Crime>();
         //Temporary list generation
-        for(int i = 0; i < 100; i++) {
+       /*for(int i = 0; i < 100; i++) {
             Crime myCrime = new Crime();
             myCrime.setTitle("Crime #"+i);
             myCrime.setSolved(i%2 == 0);
             mCrimes.add(myCrime);
-        }
+        }*/
+    }
+
+    public void addCrime(Crime c) {
+        mCrimes.add(c);
+    }
+
+    public void deleteCrime(Crime c) {
+        mCrimes.remove(c);
+    }
+
+    //Alternative method to delete crime by UUID. Probably will never be used.
+    public void deleteCrime(UUID uuid) {
+        mCrimes.remove(getCrime(uuid));
     }
 
     public List<Crime> getCrimes() {
