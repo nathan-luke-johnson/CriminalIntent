@@ -182,15 +182,15 @@ public class CrimeListFragment extends Fragment {
             mDateTextView.setText(mCrime.getDate().toString());
             mSolvedCheckBox.setChecked(mCrime.isSolved());
             //Let's make sure that we have a listener
-            /*mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            mSolvedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     mCrime.setSolved(isChecked);
                 }
-            });*/
+            });
 
             //or, disable clicking in the list view
-            mSolvedCheckBox.setClickable(false);
+            //mSolvedCheckBox.setClickable(false);
         }
 
         @Override
