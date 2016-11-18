@@ -121,6 +121,7 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mCrime.setTitle(s.toString());
+                updateCrimeDB();
             }
 
             @Override
@@ -150,6 +151,7 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 mCrime.setSolved(isChecked);
+                updateCrimeDB();
             }
         });
 
@@ -173,5 +175,11 @@ public class CrimeFragment extends Fragment {
 
     private void updateDate() {
         mDateButton.setText(DateFormat.format("dd MMMM, yyyy", mCrime.getDate()));
+        updateCrimeDB();
     }
+
+    private void updateCrimeDB() {
+        CrimeLab.get(getActivity()).updateCrime(mCrime); //necessary here to ensure DB is updated.
+    }
+
 }

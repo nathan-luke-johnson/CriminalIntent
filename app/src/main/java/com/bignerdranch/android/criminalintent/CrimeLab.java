@@ -104,8 +104,7 @@ public class CrimeLab {
     }
 
     public int getIndexOf(Crime crime) {
-        //return mCrimes.indexOf(crime);
-        return 0;
+        return this.getCrimes().indexOf(crime);
     }
 
     private static ContentValues getContentValues(Crime crime) {

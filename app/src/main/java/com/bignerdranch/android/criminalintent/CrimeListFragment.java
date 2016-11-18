@@ -150,12 +150,14 @@ public class CrimeListFragment extends Fragment {
             mCrimeRecyclerView.setAdapter(mAdapter);
         } else {
             mAdapter.setCrimes(crimes);
-            //mAdapter.notifyDataSetChanged();
+            mAdapter.notifyDataSetChanged();
+            /*
             if (crimeCount <= crimes.size()) {
                 mAdapter.notifyItemChanged(itemClicked);
             } else {
                 mAdapter.notifyItemRemoved(itemClicked);
             }
+            Eventually I will get this right */
         }
         updateSubtitle();
     }
@@ -187,6 +189,7 @@ public class CrimeListFragment extends Fragment {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     mCrime.setSolved(isChecked);
+                    CrimeLab.get(getActivity()).updateCrime(mCrime); //necessary here to ensure DB is updated.
                 }
             });
 
