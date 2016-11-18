@@ -13,8 +13,8 @@
         app:showAsAction="ifRoom"/>
     <!--item
         android:id="@+id/menu_item_hide_subtitle"
-        android:icon="@drawable/ic_menu_hide_subtitle"
+        android:icon="@drawable/ic_menu_show_subtitle"
         android:title="@string/hide_subtitle"
-        app:showAsAction="ifRoom"/-->
+        app:showAsAction="ifRoom" /-->
 
 </menu>
